@@ -1,0 +1,30 @@
+# Base Infrastructure Modules
+
+This directory contains base infrastructure modules for the AWS Terraform Enterprise Examples.
+
+## Modules
+
+- **vpc/**: VPC networking module
+- **security-groups/**: Security group configurations  
+- **iam/**: IAM roles and policies
+- **s3/**: S3 bucket configurations
+
+## Usage
+
+Each subdirectory contains reusable Terraform modules that can be referenced in your main configurations.
+
+For example:
+```hcl
+module "vpc" {
+  source = "./modules/base/vpc"
+  # module variables
+}
+```
+
+## Contributing
+
+When adding new modules:
+1. Follow the standard Terraform module structure
+2. Include proper documentation
+3. Add examples in the examples/ directory
+4. Test modules in isolation
